@@ -1,0 +1,86 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'nd nd nd nd nd nd nd nd'
+        'id id id id id id id id'
+        'tgd tgd tgd tgd tgd tgd tgd tgd'
+        'ad ad ad ad ad ad ad ad '
+        'sh sh sh sh sh sh sh sh'
+        'scd scd scd scd scd scd scd scd';
+    grid-gap: 20px;
+    padding: 20px;
+}
+#aboutDiv{
+    grid-area: ad;
+}
+
+#navbarDiv {
+    grid-area: nd;
+}
+
+#headerDiv {
+    grid-area: id;
+}
+
+#taglineDiv {
+    grid-area: tgd;
+}
+
+#skillsHobbiesSection {
+    grid-area: sh;
+}
+
+#socialDiv {
+    grid-area: scd;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.rounded-corners {
+    border-radius: 15px;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+}
+
+.tagline {
+    font-size: 2.5rem;
+    color: #031c38;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.skills-list,
+.hobbies-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.skills-list li,
+.hobbies-list li {
+    padding: 10px;
+    background-color: #f8f9fa;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #031c38;
+}
+
+.footer-section a {
+    color: #0066cc;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
